@@ -1,0 +1,11 @@
+version: '2'
+services:
+  h24gatway-postgresql:
+    image: postgres:11.6
+    # volumes:
+    #     - ~/volumes/jhipster/H24Gatway/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=H24Gatway
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432

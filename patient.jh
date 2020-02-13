@@ -1,0 +1,15 @@
+entity Patient {
+  firstName String required minlength(2) maxlength(20)
+  lastName String,
+  mobile Long required max(10)
+  email String required,
+  address String,
+  dob String required,
+  gender String required  
+}
+dto Patient with mapstruct
+paginate Patient with pagination
+service Patient with serviceImpl
+microservice Patient with Patients
+filter Patient
+clientRootFolder Patient with Patients
